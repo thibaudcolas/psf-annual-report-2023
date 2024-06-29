@@ -1,0 +1,16 @@
+{
+  "name": "psf-annual-report-2023",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Conversion of the official [2023 PSF Annual Impact Report (PDF, 16MB)](https://www.python.org/psf/annual-report/2023/) to HTML.",
+  "main": "index.js",
+  "scripts": {
+    "start": "tailwindcss -i ./input.css -o ./output.css --watch --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}

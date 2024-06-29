@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "system-ui", "Arial", sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  section {
+    min-height: 100vh;
+    position: relative;
+  }
+  section:nth-of-type(6) {
+    background-color: #e6eef2;
+    color: #333;
+  }
+  section:nth-of-type(7),
+  section:nth-of-type(8),
+  .section-black {
+    background-color: #000000;
+    color: #ffffff;
+    --link-color: theme("colors.blue.300");
+  }
+  .highlight {
+    color: #00aaff;
+  }
+  .section-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  .section-content {
+    margin-bottom: 2rem;
+  }
+  .section-content p {
+    margin-bottom: 1rem;
+  }
+  .signature {
+    font-weight: 700;
+    color: #00aaff;
+  }
+
+  .highlight {
+    color: #1e40af;
+  }
+  .section-title {
+    font-family: "Roboto Mono", monospace;
+    font-size: 1rem;
+    color: var(--link-color, #1e40af);
+    display: flex;
+    align-items: center;
+  }
+  .section-title i {
+    margin-right: 0.5rem;
+  }
+
+  a {
+    text-decoration: underline;
+    color: var(--link-color, theme("textColor.blue.700"));
+  }
+
+  a[href^="#section"] {
+    font-size: theme("fontSize.2xl");
+    background-color: theme("colors.white");
+    padding: 2px;
+  }
+
+  @media (max-width: 640px) {
+    a[href^="#section"] {
+      font-size: theme("fontSize.lg");
+    }
+  }
+}
+
+@layer utilities {
+  @media (max-width: 640px) {
+    .p-8 {
+      padding: 0.25rem;
+    }
+
+    .p-4 {
+      padding: 0.125rem;
+    }
+  }
+}
