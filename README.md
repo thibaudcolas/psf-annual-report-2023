@@ -30,6 +30,17 @@ With [ImageOptim](https://imageoptim.com/) only:
 
 ### Optimized
 
+Sample commands:
+
+```bash
+avifenc --min 20 --max 30 25-2023-expenses-by-category.png 25-2023-expenses-by-category.avif
+pngquant -f --quality=70-80 25-2023-expenses-by-category.png -o 25-2023-expenses-by-category-n.png
+avifenc --min 20 --max 30 report-2_1.jpg report-2_1.avif
+cjpegli -q 70 report-2_1.jpg report-2_1-li.jpg
+```
+
+Result:
+
 | File                                         | Original size (KB) | Jpegli / pngquant (KB) | AVIF (KB) |
 | -------------------------------------------- | ------------------ | ---------------------- | --------- |
 | 25-2023-expenses-by-category.png             | 56                 | 16                     | 16        |
